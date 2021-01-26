@@ -1,7 +1,7 @@
 function superbowlWin(array) {
-  array.find(object => {
-    win = object.result === "W"
-    return win.year
+  let win = array.find(object => {
+    object.result === "W"
   })
-  return undefined
+  if (win) return win.year
+  else return undefined
 }
